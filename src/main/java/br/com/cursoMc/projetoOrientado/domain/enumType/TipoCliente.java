@@ -16,7 +16,7 @@ public enum TipoCliente {
     public int getCod() {
         return cod;
     }
-    public String getDescrricao () {
+    public String getDescricao () {
         return descricao;
     }
     public static TipoCliente toEnum(Integer cod) {

@@ -14,7 +14,7 @@ import br.com.cursoMc.projetoOrientado.services.ClienteService;
 
 @RestController
 @RequestMapping(value = "/clientes")
-public class ClienteResorce {
+public class ClienteResource {
 
 
 

@@ -2,6 +2,8 @@ package br.com.cursoMc.projetoOrientado.domain;
 
 import java.io.Serializable;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+
 import br.com.cursoMc.projetoOrientado.domain.enumType.EstadoPagamento;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
@@ -10,6 +12,8 @@ import jakarta.persistence.InheritanceType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.MapsId;
 import jakarta.persistence.OneToOne;
+
+
 
 @Entity
 @Inheritance(strategy=InheritanceType.JOINED)
@@ -21,6 +25,7 @@ public abstract class Pagamento implements Serializable {
     private Integer id;
     private Integer estado;
 
+    @JsonBackReference
     @OneToOne
     @JoinColumn(name="pedido_id")
     @MapsId

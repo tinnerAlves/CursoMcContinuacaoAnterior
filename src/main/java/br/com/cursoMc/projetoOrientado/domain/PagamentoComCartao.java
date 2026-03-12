@@ -7,22 +7,22 @@ import jakarta.persistence.Entity;
 public class PagamentoComCartao extends Pagamento {
     private static final long serialVersionUID = 1L;
 
-    private Integer numeroDeparcelas;
+    private Integer numeroDeParcelas;
 
     public PagamentoComCartao() {
     }
 
-    public PagamentoComCartao(Integer id, EstadoPagamento estado, Pedido pedido, Integer numeroDeparcelas) {
+    public PagamentoComCartao(Integer id, EstadoPagamento estado, Pedido pedido, Integer numeroDeParcelas) {
         super(id, estado, pedido);
-        this.numeroDeparcelas = numeroDeparcelas;
+        this.numeroDeParcelas = numeroDeParcelas;
     }
 
-    public Integer getNumeroDeparcelas() {
-        return numeroDeparcelas;
+    public Integer getNumeroDeParcelas() {
+        return numeroDeParcelas;
     }
 
-    public void setNumeroDeparcelas(Integer numeroDeparcelas) {
-        this.numeroDeparcelas = numeroDeparcelas;
+    public void setNumeroDeParcelas(Integer numeroDeParcelas) {
+        this.numeroDeParcelas = numeroDeParcelas;
     }
 
 
