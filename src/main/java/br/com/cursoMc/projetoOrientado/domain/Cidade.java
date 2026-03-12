@@ -2,7 +2,7 @@ package br.com.cursoMc.projetoOrientado.domain;
 
 import java.io.Serializable;
 
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -22,7 +22,7 @@ public class Cidade implements Serializable {
     private String nome;
 
 
-    @JsonManagedReference
+    
     @ManyToOne
     @JoinColumn(name = "estado_id")
     private Estado estado;
